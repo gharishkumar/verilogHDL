@@ -34,7 +34,9 @@ encoder_pe DUT (
    
    initial
    begin
+   $monitor ("time%0t=;\t\t%0h;\t%0h;\t%0h",$time,int_reg,y_out,valid_out);
         int_reg = 0;
+        #100 $finish;
    end      
           
 endmodule
