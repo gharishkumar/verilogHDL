@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct  1 20:35:13 2024
+# Process ID: 28099
+# Current directory: /home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.runs/synth_1
+# Command line: vivado -log half_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source half_adder.tcl
+# Log file: /home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.runs/synth_1/half_adder.vds
+# Journal file: /home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.runs/synth_1/vivado.jou
+# Running On        :vlsi
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 24.04.1 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+# CPU Frequency     :2899.995 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16588 MB
+# Swap memory       :2147 MB
+# Total Virtual     :18735 MB
+# Available Virtual :14481 MB
+#-----------------------------------------------------------
+source half_adder.tcl -notrace

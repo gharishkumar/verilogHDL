@@ -1,0 +1,27 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_1bit_comparator.v,1727799607,verilog,,,,tb_1bit_comparator,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_add_1bit.v,1727925645,verilog,,,,tb_add_1bit,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_add_nbit.v,1727928967,verilog,,,,tb_add_nbit,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_add_sub_1bit.v,1728009365,verilog,,,,tb_add_sub_1bit,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_decoder_2to4.v,1727968986,verilog,,,,tb_decoder_2to4,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_exercise_2.v,1727755409,verilog,,,,tb_exercise_2,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_full_adder.v,1727797305,verilog,,,,tb_full_adder,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_half_adder.v,1727797557,verilog,,,,tb_half_adder,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_mux_2to1_.v,1727971299,verilog,,,,tb_mux_2to1_,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_mux_2to_1.v,1727923913,verilog,,,,tb_mux_2to_1,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_mux_4to1.v,1728013795,verilog,,,,tb_mux_4to1,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/add_1bit.v,1727925520,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_add_1bit.v,,add_1bit,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/add_nbit.v,1727927072,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_add_nbit.v,,add_nbit,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/add_sub_1bit.v,1728011958,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_add_sub_1bit.v,,add_sub_1bit,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/comparator_1bit.v,1727798502,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_1bit_comparator.v,,comparator_1bit,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/decoder_2to4.v,1727968207,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_decoder_2to4.v,,decoder_2to4,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/exercise_2.v,1727754475,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_exercise_2.v,,exercise_2,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/full_adder.v,1727796292,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/half_adder.v,,full_adder,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/half_adder.v,1727793910,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_half_adder.v,,half_adder,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/mux_2to1.v,1727923979,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_mux_2to_1.v,,mux_2to1,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/mux_2to1_.v,1727970885,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_mux_2to1_.v,,mux_2to1_,,,,,,,,
+/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sources_1/new/mux_4to1.v,1728012916,verilog,,/home/students/Verilog_lab/verilog_lab_basics/verilog_lab_basics.srcs/sim_1/new/tb_mux_4to1.v,,mux_4to1,,,,,,,,
