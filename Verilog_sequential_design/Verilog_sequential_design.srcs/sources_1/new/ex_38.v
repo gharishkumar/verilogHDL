@@ -44,9 +44,7 @@ module ex_38(
         begin
             ff1   <=  a_in;
             ff2   <=  b_in;
-            y1     =  ff1 & ff2;
-            y2     =  ~y1;
-            q_out <=  y2;
+            q_out <=  ~(ff1 & ff2);
         end
     
     end
