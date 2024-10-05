@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/05/2024 06:18:53 PM
+// Create Date: 10/05/2024 07:13:06 PM
 // Design Name: 
-// Module Name: counter_nbit
+// Module Name: counter_nbit_load
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module counter_nbit #(parameter DATA_WIDTH = 4) (
+module counter_nbit_load#(parameter DATA_WIDTH = 4) (
+                    input [DATA_WIDTH-1:0]data_in,
+                    input load,
                     input up_dn_in,
                     input clk,
                     input reset_n,
@@ -31,6 +33,8 @@ module counter_nbit #(parameter DATA_WIDTH = 4) (
      begin
             if(!reset_n)
                 q_out <= {DATA_WIDTH{'b0}};
+            else if (load)
+                q_out <= data_in;
             else if (up_dn_in)
                 q_out <= q_out+1;
             else

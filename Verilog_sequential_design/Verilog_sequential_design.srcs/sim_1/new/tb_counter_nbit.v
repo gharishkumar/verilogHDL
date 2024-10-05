@@ -20,18 +20,18 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_counter_nbit #(parameter N = 4);
+module tb_counter_nbit #(parameter N = 2);
 reg up_dn_in;
 reg clk;
 reg reset_n;
 wire [N-1:0]q_out;
 
-counter_nbit DUT(
-                .up_dn_in(up_dn_in),
-                .clk(clk),
-                .reset_n(reset_n),
-                .q_out(q_out)
-                );
+counter_nbit #(.DATA_WIDTH(N))DUT(
+                                    .up_dn_in(up_dn_in),
+                                    .clk(clk),
+                                    .reset_n(reset_n),
+                                    .q_out(q_out)
+                                    );
                 
   always #10 clk = ~clk;
   always #160 up_dn_in=~up_dn_in;
@@ -43,7 +43,8 @@ counter_nbit DUT(
   
   initial
   begin
-          $monitor("%0t\t%0d\t%0d",$time,q_out,reset_n);
+          $display("time\t\tq_out\treset_n\tup_dn_in");
+          $monitor("%0t\t\t%0d\t%0d\t%0d",$time,q_out,reset_n, up_dn_in);
           clk=0; reset_n=0; up_dn_in=1;
           #5000 $finish;
   end              
