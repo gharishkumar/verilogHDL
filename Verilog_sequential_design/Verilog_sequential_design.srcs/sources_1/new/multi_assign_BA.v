@@ -37,11 +37,20 @@ always @(posedge clk, negedge reset_n)
               q_out = 'b0;
          end
          else
-             begin
-                  tmp_1 = d_in;
-                  tmp_2 = tmp_1;
-                  q_out = tmp_2;
-             end
+         begin
+              /*tmp_1 = d_in;
+              tmp_2 = tmp_1;
+              q_out = tmp_2;*/ //one ff
+              
+              /*q_out = tmp_2;              
+              tmp_1 = d_in;
+              tmp_2 = tmp_1;*/ //two ff
+              
+              q_out = tmp_2;              
+              tmp_2 = tmp_1;  
+              tmp_1 = d_in; //three ff
+              
+         end 
     end
     
 endmodule
