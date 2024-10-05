@@ -24,22 +24,31 @@ module tb_d_ff_p;
 
 reg d_in;
 reg clk_in;
+reg reset_n;
 wire q_out;
 
 
 d_ff_p DUT(
             .d_in(d_in),
             .clk_in(clk_in),
+            .reset_n(reset_n),
             .q_out(q_out)
             );
                 
 always #20 d_in=~d_in;
-always #10 clk_in=~clk_in;
+always #5 clk_in=~clk_in;
+
+always 
+begin
+    #25 reset_n=1;
+    #50 reset_n=~reset_n;
+end
+
 
 initial
 begin
-    d_in=0; clk_in=0;
-    #100 $finish ;
+    d_in=0; clk_in=0; reset_n=1;
+    #200 $finish ;
 end
 
 endmodule

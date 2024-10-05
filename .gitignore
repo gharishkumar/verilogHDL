@@ -4,10 +4,10 @@ verilog_lab_basics/verilog_lab_basics.ip_user_files/
 verilog_lab_basics/verilog_lab_basics.runs/
 verilog_lab_basics/verilog_lab_basics.sim/
 verilog_lab_basics/verilog_lab_basics.srcs/utils_1
-Verilog_sequential_design/verilog_lab_basics.cache/
-Verilog_sequential_design/verilog_lab_basics.hw/
-Verilog_sequential_design/verilog_lab_basics.ip_user_files/
-Verilog_sequential_design/verilog_lab_basics.runs/
-Verilog_sequential_design/verilog_lab_basics.sim/
-Verilog_sequential_design/verilog_lab_basics.srcs/utils_1
+Verilog_sequential_design/*.cache/
+Verilog_sequential_design/*.hw/
+Verilog_sequential_design/*.ip_user_files/
+Verilog_sequential_design/*.runs/
+Verilog_sequential_design/*.sim/
+Verilog_sequential_design/*.srcs/utils_1
 git_push.sh

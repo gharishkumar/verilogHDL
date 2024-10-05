@@ -23,11 +23,15 @@
 module d_ff_p(
                 input d_in,
                 input clk_in,
+                input reset_n,
                 output reg q_out
                 );
-      always @(posedge clk_in)
+      always @(posedge clk_in, negedge reset_n)
       begin
-            q_out <= d_in;
+            if(!reset_n)
+                q_out <=1'b0;
+            else
+                q_out <= d_in;
             
       end
       
