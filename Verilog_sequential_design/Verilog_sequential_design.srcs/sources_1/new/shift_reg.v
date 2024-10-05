@@ -38,9 +38,10 @@ always @(posedge clk, negedge reset_n)
          end
          else
              begin
+                  q_out <= tmp_2;
+
                   tmp_1 <= d_in;
                   tmp_2 <= tmp_1;
-                  q_out <= tmp_2;
              end
     end
     
