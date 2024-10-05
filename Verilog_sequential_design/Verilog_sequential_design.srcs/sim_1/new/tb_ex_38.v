@@ -47,6 +47,8 @@ end
 
 initial
 begin
+    $display("Time\tclk\ta_in\t\tb_in\t\treset");
+    $monitor("%0t\t%0d\t%0d\t%0d\t%0d", $time, clk, a_in, b_in, reset_n);
     a_in='b0; b_in='b0; clk='b0; reset_n='b1;
     #500 $finish;
 end

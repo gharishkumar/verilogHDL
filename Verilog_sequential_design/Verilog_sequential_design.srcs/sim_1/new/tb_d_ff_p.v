@@ -47,6 +47,8 @@ end
 
 initial
 begin
+    $display("Time\tclk\td_in\treset");
+    $monitor("%0t\t%0d\t%0d\t%0d", $time, clk, d_in, reset_n);
     d_in=0; clk_in=0; reset_n=1;
     #10000 $finish ;
 end
