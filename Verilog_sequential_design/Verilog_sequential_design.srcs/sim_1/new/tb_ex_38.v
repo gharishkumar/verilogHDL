@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/05/2024 01:35:37 PM
+// Create Date: 10/05/2024 04:22:54 PM
 // Design Name: 
-// Module Name: tb_d_ff_p
+// Module Name: tb_ex_38
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,35 +20,38 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_d_ff_p;
+module tb_ex_38;
 
-reg d_in;
-reg clk_in;
+reg a_in;
+reg b_in;
+reg clk;
 reg reset_n;
 wire q_out;
 
-
-d_ff_p DUT(
-            .d_in(d_in),
-            .clk_in(clk_in),
-            .reset_n(reset_n),
-            .q_out(q_out)
-            );
-                
-always #20 d_in=~d_in;
-always #5 clk_in=~clk_in;
-
-always 
+ex_38 DUT(
+        .a_in(a_in),
+        .b_in(b_in),
+        .clk(clk),
+        .reset_n(reset_n),
+        .q_out(q_out)
+        );
+            
+always #40 a_in = ~a_in;
+always #80 b_in = ~b_in;
+always #10 clk = ~clk;
+always
 begin
     #8 reset_n=1;
     #49 reset_n=~reset_n;
 end
 
-
 initial
 begin
-    d_in=0; clk_in=0; reset_n=1;
-    #10000 $finish ;
+    a_in='b0; b_in='b0; clk='b0; reset_n='b1;
+    #500 $finish;
 end
 
+
+            
+            
 endmodule
