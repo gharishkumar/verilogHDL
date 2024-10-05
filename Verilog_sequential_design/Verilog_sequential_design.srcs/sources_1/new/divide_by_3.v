@@ -21,8 +21,20 @@
 
 
 module divide_by_3(
-    input clk,
-    input reset_n,
-    output q_out
-    );
+                    input clk,
+                    input reset_n,
+                    output q_out
+                    );
+        reg [1:0]count;            
+        always @(negedge clk or negedge reset_n)
+          begin
+                if(!reset_n)
+                    count <= 2'b00;
+                else if (count == 2'b10)
+                    count <= 2'b00;
+                else
+                    count <= count + 1;
+          end
+          
+        assign q_out = count[1];
 endmodule
