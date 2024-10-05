@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 10/05/2024 01:32:06 PM
+// Create Date: 10/05/2024 02:46:29 PM
 // Design Name: 
-// Module Name: d_ff_p
+// Module Name: d_ff_n_async_reset
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module d_ff_p(
+module d_ff_n_async_reset(
                 input d_in,
                 input clk_in,
                 input reset_n,
                 output reg q_out
                 );
-                
-      always @(posedge clk_in)
-            q_out <= d_in;
- 
+      always @(negedge clk_in, negedge reset_n)
+      begin
+            if(!reset_n)
+                q_out <=1'b0;
+            else
+                q_out <= d_in;
+            
+      end
+      
 endmodule

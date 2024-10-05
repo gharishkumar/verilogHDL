@@ -40,15 +40,15 @@ always #5 clk_in=~clk_in;
 
 always 
 begin
-    #25 reset_n=1;
-    #50 reset_n=~reset_n;
+    #8 reset_n=1;
+    #49 reset_n=~reset_n;
 end
 
 
 initial
 begin
     d_in=0; clk_in=0; reset_n=1;
-    #200 $finish ;
+    #500 $finish ;
 end
 
 endmodule
