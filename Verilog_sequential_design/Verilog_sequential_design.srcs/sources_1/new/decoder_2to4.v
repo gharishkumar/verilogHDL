@@ -23,11 +23,16 @@
 module decoder_2to4(
                     input[1:0] sel_in,
                     input en_in,
-                    output[3:0] y_out
+                    output reg [3:0] y_out
                     );
-    
-    assign y_out[0] = en_in & (!sel_in[1]) & (!sel_in[0]);
-    assign y_out[1] = en_in & (!sel_in[1]) & (sel_in[0]);
-    assign y_out[2] = en_in & (sel_in[1]) & (!sel_in[0]);
-    assign y_out[3] = en_in & (sel_in[1]) & (sel_in[0]);
+   always @*
+    case({en_in, sel_in})
+        3'b100:  y_out =  4'b0001;
+        3'b101:  y_out =  4'b0010;
+        3'b110:  y_out =  4'b0100;
+        3'b111 :  y_out =  4'b1000;
+        default :  y_out =  4'b0000;
+         
+    endcase
+   
 endmodule
