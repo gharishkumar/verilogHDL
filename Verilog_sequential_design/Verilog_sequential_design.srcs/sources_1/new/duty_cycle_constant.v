@@ -23,26 +23,35 @@
 module duty_cycle_constant(
                     input clk,
                     input reset_n,
-                    output q_out
+                    output reg q_out
                     );
         reg [1:0]count;            
         always @(posedge clk or negedge reset_n)
           begin
                 if(!reset_n)
+                begin
                     count <= 2'b00;
+                    
+                    q_out <= 0;
+                end
                 else if (count == 2'b10)
+                begin
                     count <= 2'b00;
+                end
                 else
+                begin
                     count <= count + 1;
+                    q_out <= count[0];
+                end
           end
           
         always @(negedge clk)
           begin
                 if (count == 2'b01)
+                begin
                     count <= 2'b00;
-                else
-                    count <= count;
+                    q_out <= ~q_out;
+                end
           end
           
-        assign q_out = count[1];
 endmodule
