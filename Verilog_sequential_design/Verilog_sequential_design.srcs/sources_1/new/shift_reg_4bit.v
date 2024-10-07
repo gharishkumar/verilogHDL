@@ -42,10 +42,11 @@ module shift_reg_4bit(
         end
         else if(dir_in)
         begin
-            q_out <= {q_out[0],q_out[3]};
+            q_out <= {1'b0,q_out[3:1]};
         end
         else
         begin
+            q_out <= {q_out[2:0],1'b0};
         end
     end   
      
