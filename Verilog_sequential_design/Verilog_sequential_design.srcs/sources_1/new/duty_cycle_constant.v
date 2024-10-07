@@ -36,14 +36,12 @@ module duty_cycle_constant(
                     count <= count + 1;
           end
           
-        always @(negedge clk or negedge reset_n)
+        always @(negedge clk)
           begin
-                if(!reset_n)
-                    count <= 2'b00;
-                else if (count == 2'b10)
+                if (count == 2'b01)
                     count <= 2'b00;
                 else
-                    count <= count + 1;
+                    count <= count;
           end
           
         assign q_out = count[1];
