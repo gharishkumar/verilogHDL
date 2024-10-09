@@ -28,7 +28,7 @@ module add_sub_1bit(
     output flag_out
     );
     
-    reg sum_diff;
+    wire sum_diff;
     /*always @(*)
     begin
         if (opcode_in)
@@ -45,7 +45,7 @@ module add_sub_1bit(
         else
             flag_out = ~a_in & b_in;
     end*/
-    
+    /*
     always @(*)
     begin
     
@@ -59,6 +59,9 @@ module add_sub_1bit(
         end
  
     end
+    assign {flag_out,sum_out} = a_in + (sum_diff + opcode_in);*/
+    
+    assign sum_diff = (opcode_in)?(~b_in):b_in;
     assign {flag_out,sum_out} = a_in + (sum_diff + opcode_in);
     
 endmodule

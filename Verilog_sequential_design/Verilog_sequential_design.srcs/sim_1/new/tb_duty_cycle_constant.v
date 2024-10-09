@@ -20,7 +20,28 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module tb_duty_cycle_constant(
+module tb_duty_cycle_constant;
 
-    );
+reg clk;
+reg reset_n;
+wire q_out;
+
+duty_cycle_constant DUT (
+                     .clk(clk),
+                     .reset_n(reset_n),
+                     .q_out(q_out)
+                     );
+
+    always #10 clk = ~clk;
+    
+    always 
+    begin
+        #8 reset_n=1;
+        #409 reset_n=~reset_n;
+    end
+    initial
+    begin
+        clk = 0; reset_n=1;
+        #500 $finish;
+    end
 endmodule

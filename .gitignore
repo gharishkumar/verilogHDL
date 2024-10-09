@@ -10,4 +10,17 @@ Verilog_sequential_design/Verilog_sequential_design.ip_user_files/
 Verilog_sequential_design/Verilog_sequential_design.runs/
 Verilog_sequential_design/Verilog_sequential_design.sim/
 Verilog_sequential_design/Verilog_sequential_design.srcs/utils_1
+assignment_1/assignment_1.cache/
+assignment_1/assignment_1.hw/
+assignment_1/assignment_1.ip_user_files/
+assignment_1/assignment_1.runs/
+assignment_1/assignment_1.sim/
+assignment_1/assignment_1.srcs/utils_1
+verilog_lab_basics_1/verilog_lab_basics.cache/
+verilog_lab_basics_1/verilog_lab_basics.hw/
+verilog_lab_basics_1/verilog_lab_basics.ip_user_files/
+verilog_lab_basics_1/verilog_lab_basics.runs/
+verilog_lab_basics_1/verilog_lab_basics.sim/
+verilog_lab_basics_1/verilog_lab_basics.srcs/utils_1
+
 git_push.sh
