@@ -25,13 +25,15 @@ module count_no_of_1s(
                       output [3:0] no_of_1s
                      );
      integer i;                
-     function [3:0]count_1 ([7:0]a_in);
+     function [3:0]count_1 (input [7:0]a_in);
      begin
         count_1 = 0;
         for(i=0; i<8; i=i+1)
         begin
             if(a_in[i])
                 count_1=count_1+1;
+            else
+                count_1=count_1+0;
         end
      end
      endfunction
