@@ -23,36 +23,29 @@
 module duty_cycle_constant(
                     input clk,
                     input reset_n,
-                    output reg q_out
+                    output q_out
                     );
-        reg [1:0] counter; // 2-bit counter to count clock cycles
-
-    always @(posedge clk or posedge reset_n)
-    begin
-        if (!reset_n)
-        begin
-            counter <= 2'b00; // Reset counter
-            q_out <= 0;     // Reset output clock
-        end
-        else
-        begin
-            if (counter == 2'b10)
-            begin
-                q_out <= 1;   // Set output high for T/3
-            end
-            else if (counter == 2'b00)
-            begin
-                q_out <= 0;   // Set output low for 2T/3
-            end
-            
-            // Increment counter
-            counter <= counter + 1;
-
-            // Reset counter after reaching 3
-            if (counter == 2'b11) begin
-                counter <= 2'b00;
-            end
-        end
-    end
+        reg [1:0]count;            
+        always @(posedge clk or negedge reset_n)
+          begin
+                if(!reset_n)
+                    count <= 2'b00;
+                else if (count == 2'b10)
+                    count <= 2'b00;
+                else
+                    count <= count + 1;
+          end
+          
+        always @(negedge clk or negedge reset_n)
+          begin
+                if(!reset_n)
+                    count <= 2'b00;
+                else if (count == 2'b10)
+                    count <= 2'b00;
+                else
+                    count <= count + 1;
+          end
+          
+        assign q_out = count[1];
           
 endmodule

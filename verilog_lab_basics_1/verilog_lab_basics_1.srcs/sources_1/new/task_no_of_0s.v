@@ -22,11 +22,11 @@
 
 module task_no_of_0s(
     input [7:0] a_in,
-    output reg [4:0] no_of_0s
+    output reg [3:0] no_of_0s
     );
     
      integer i, count;                
-     task count_0 (input [7:0]a_in, output reg [4:0] no_of_0s);
+     task count_0 (input [7:0]a_in, output reg [3:0] no_of_0s);
      begin
         count = 0;
         for(i=0; i<8; i=i+1)
