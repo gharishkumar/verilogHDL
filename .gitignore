@@ -22,4 +22,17 @@ verilog_lab_basics_1/verilog_lab_basics_1.ip_user_files/
 verilog_lab_basics_1/verilog_lab_basics_1.runs/
 verilog_lab_basics_1/verilog_lab_basics_1.sim/
 verilog_lab_basics_1/verilog_lab_basics_1.srcs/utils_1
+memory_modeling/memory_modeling.cache/
+memory_modeling/memory_modeling.hw/
+memory_modeling/memory_modeling.ip_user_files/
+memory_modeling/memory_modeling.runs/
+memory_modeling/memory_modeling.sim/
+memory_modeling/memory_modeling.srcs/utils_1
+delay_modeling/delay_modeling.cache/
+delay_modeling/delay_modeling.hw/
+delay_modeling/delay_modeling.ip_user_files/
+delay_modeling/delay_modeling.runs/
+delay_modeling/delay_modeling.sim/
+delay_modeling/delay_modeling.srcs/utils_1
+
 git_push.sh
