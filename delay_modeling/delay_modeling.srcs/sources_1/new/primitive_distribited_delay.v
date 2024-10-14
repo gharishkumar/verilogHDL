@@ -29,7 +29,7 @@ module primitive_distribited_delay(
                                     wire y1,
                                     wire y2
                                     );
-         and #2 (y1,a_in,b_in);
-         and #2 (y2,c_in,d_in);
-         or #3 (y_out,y1,y2);
+         and #3 (y1,a_in,b_in);
+         and #4 (y2,c_in,d_in);
+         or #5 (y_out,y1,y2);
 endmodule
